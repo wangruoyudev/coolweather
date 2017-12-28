@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.remove("weather");
-        editor.apply();
+        //SharedPreferences.Editor editor = prefs.edit();
+        //editor.remove("weather");
+       // editor.apply();
 
         if(prefs.getString("weather", null) != null){
             Intent intent = new Intent(this, WeatherActivity.class);
